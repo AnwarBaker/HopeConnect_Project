@@ -17,6 +17,14 @@ const orphanRoutes = require('./routes/orphans');
 app.use('/api/orphans', orphanRoutes);
 
 
+const orphanUpdatesRoutes = require('./routes/orphanUpdates');
+app.use('/api/orphan-updates', orphanUpdatesRoutes);
+
+
+
+const notificationRoutes = require('./routes/notifications');
+app.use('/api/notifications', notificationRoutes);
+
 
 
 app.listen(PORT, () => {
